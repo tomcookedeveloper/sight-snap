@@ -1,0 +1,214 @@
+:root {
+    --sat: env(safe-area-inset-top);
+    --sar: env(safe-area-inset-right);
+    --sab: env(safe-area-inset-bottom);
+    --sal: env(safe-area-inset-left);
+}
+
+body,
+html {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button {
+    display: flex;
+    user-select: none;
+    border: solid;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    border-radius: 5px;
+    border-width: 1px;
+    position: absolute;
+}
+
+.panel {
+    padding: 0px;
+    position: fixed;
+    z-index: 1;
+    border-width: 1px !important;
+    border-radius: 5px;
+    border: solid;
+}
+
+.hiddenPanel {
+    display: none;
+}
+
+.longText {
+    font-size: 75% !important;
+}
+
+.melodyText {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.settingsButton {
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.settingsButton span {
+    display: inline-block;
+}
+
+#highButtonText,
+#lowButtonText {
+    position: absolute;
+}
+
+#settingsHighButton,
+#settingsLowButton {
+    align-items: normal;
+    text-align: left;
+}
+
+.lightMode {
+    background-color: #dae3f1;
+    border-color: black;
+    color: #000;
+}
+
+.button.lightMode {
+    background-color: #fefefe;
+}
+
+.darkMode {
+    border-color: white;
+    color: white;
+}
+
+.panel.darkMode {
+    background-color: black;
+}
+
+.panel.lightMode {
+    color: black;
+}
+
+.darkMode body {
+    background-color: black;
+}
+
+.featureLogo {
+    position: absolute;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.settingsButton.lightMode {
+    background-color: #a4b9da;
+}
+
+.diatonic.lightMode {
+    background-color: #fefefe;
+}
+
+.settingsButton.darkMode {
+    background-color: #416bae
+}
+
+.featureBar.lightMode {
+    background-color: #b5c7e3;
+}
+
+.featureBar.darkMode {
+    background-color: #3f67a6;
+}
+
+.chromatic.lightMode {
+    background-color: #fefefe;
+}
+
+.diatonic.darkMode,
+.chromatic.darkMode,
+.button.darkMode {
+    background-color: #334d78;
+}
+
+.featureButton.lightMode {
+    border-width: 0px;
+    background-color: #a4b9da;
+}
+
+.featureButton.darkMode {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.highlighted.lightMode {
+    background-color: #ffd326;
+}
+
+.highlighted.darkMode {
+    background-color: #d7b11b;
+}
+
+.tonic,
+.playingNote {
+    text-decoration: underline;
+}
+
+.melodyHighlight.lightMode {
+    background-color: #ffd326;
+}
+
+.melodyHighlight.darkMode {
+    background-color: #d7b11b;
+}
+
+.hidden-label {
+    color: transparent;
+}
+
+.staveLine {
+    border: solid;
+    position: absolute;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-width: thin;
+}
+
+.note {
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.note.lightMode {
+    background-color: #000000;
+}
+
+.note.darkMode {
+    background-color: #ffffff;
+}
